@@ -26,9 +26,9 @@ function App() {
                 "headers": {"Content-Type": "application/json"},
                 body: JSON.stringify(body)
             })
-            
+            window.location = "/"
         } catch (err) {
-            console.lerr(err.response.status)
+            console.lerr(err.message)
         }
     }
   
